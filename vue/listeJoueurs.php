@@ -22,9 +22,6 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Les données des joueurs seront insérées ici dynamiquement -->
-            <!-- Exemple de données dynamiques (à remplacer par votre moteur de template) -->
-            <!-- BEGIN players -->
             <tr>
                 <td>{{numero_de_licence}}</td>
                 <td>{{nom}}</td>
