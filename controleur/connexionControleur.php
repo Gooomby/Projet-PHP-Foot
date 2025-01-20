@@ -6,7 +6,7 @@ session_start();
 
 // Vérifier si l'utilisateur est déjà connecté
 if (isset($_SESSION['username'])) {
-    $lastPage = isset($_SESSION['last_page']) ? $_SESSION['last_page'] : '../vue/listeusager.php';
+    $lastPage = isset($_SESSION['last_page']) ? $_SESSION['last_page'] : '../vue/listeJoueurs.php';
     header("Location: $lastPage");
     exit;
 }
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Vérifier le mot de passe
             if (password_verify($motDePasse, $utilisateur['password'])) {
                 $_SESSION['username'] = $username;
-                $lastPage = isset($_SESSION['last_page']) ? $_SESSION['last_page'] : '../vue/listeusager.php';
+                $lastPage = isset($_SESSION['last_page']) ? $_SESSION['last_page'] : '../vue/listeJoueurs.php';
                 header("Location: $lastPage");
                 exit;
             } else {
@@ -44,4 +44,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $encadrerMotDePasse = 'style="border: 1px solid red;"';
     }
 }
-

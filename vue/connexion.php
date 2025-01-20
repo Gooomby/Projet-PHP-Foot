@@ -1,4 +1,5 @@
 <?php
+// vue/connexion.php
 require_once '../controleur/connexionControleur.php';
 ?>
 
@@ -13,7 +14,7 @@ require_once '../controleur/connexionControleur.php';
 <body>
     <h1>Connexion</h1>
     <div class="container">
-        <form method="post" action="../controleur/connexionControleur.php">
+        <form method="post" action="">
             <label for="username">Nom d'utilisateur:</label>
             <input type="text" id="username" name="username" required <?php echo $encadrerUsername; ?>>
 
@@ -25,7 +26,6 @@ require_once '../controleur/connexionControleur.php';
 
         <p style="color: red;"><?php echo $messageErreur; ?></p>
 
-        <p>Pas encore de compte ? <a href="../vue/inscription.php">Inscrivez-vous ici</a>.</p>
     </div>
 </body>
 </html>

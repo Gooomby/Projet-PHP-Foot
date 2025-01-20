@@ -19,3 +19,4 @@ function ajouterUtilisateur($username, $motDePasseHache) {
     $requete->bindParam(':password', $motDePasseHache);
     return $requete->execute();
 }
+?>
