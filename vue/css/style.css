@@ -162,8 +162,13 @@ th {
     display: inline-block;
 }
 .edit-btn {
-    background: #ffc107;
-    color: black;
+    background: #e83e8c;
+    color: white;
+    margin-right: 5px;
+}
+
+.edit-btn:hover {
+    background: #d03677;
 }
 .delete-btn {
     background: #dc3545;
